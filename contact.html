@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hospital website for Help all" />
+    <meta name="keywords" content="hospital, doctor, patient, nurse" />
+    <meta name="author" content="Abdelhameed Marei" />
+    <!-- Link Index Main File CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Contact File CSS -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts Library -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Brand Icon Site -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/medical-icon.png" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Topbar Start -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar__content">
+          <div class="topbar__info">
+            <span>
+              <a href="tel:+01062588401">
+                <i class="fa-solid fa-phone"></i>
+                +0123456789
+              </a>
+              <span class="space">|</span>
+            </span>
+            <span>
+              <a href="mailto:info@example.com">
+                <i class="fa-regular fa-envelope"></i>
+                info@example.com
+              </a>
+            </span>
+          </div>
+          <ul class="topbar__social-media">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__content">
+          <div class="navbar__brand">
+            <a href="index.html">
+              <i class="fa-solid fa-house-chimney-medical fa-2x"></i>
+              <h1 title="Hospital">medinova</h1>
+            </a>
+          </div>
+          <input type="checkbox" id="menu-icon" />
+          <label for="menu-icon"><i class="fa-solid fa-bars"></i></label>
+          <ul class="navbar__link">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="main_pages_link">
+              <a href="#">Pages <i class="fa-solid fa-sort-down"></i></a>
+              <ul class="sub_pages_link">
+                <li><a href="#">project 1</a></li>
+                <li><a href="#">project 2</a></li>
+                <li><a href="#">project 3</a></li>
+                <li><a href="#">project 4</a></li>
+                <li><a href="#">project 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contact Start -->
+    <section class="contact">
+      <div class="container">
+        <div class="main__title">
+          <h3 class="title">ANY QUESTIONS?</h3>
+          <h2 class="des">
+            Please Feel Free To <br />
+            Contact Us
+          </h2>
+        </div>
+        <div class="contact__content__info">
+          <div class="contact__info">
+            <div class="icon">
+              <i class="fa-solid fa-location-arrow"></i>
+            </div>
+            <p>123 Street, New York, USA</p>
+          </div>
+          <div class="contact__info">
+            <div class="icon">
+              <i class="fa-solid fa-phone-flip"></i>
+            </div>
+            <p>+012 345 6789</p>
+          </div>
+          <div class="contact__info">
+            <div class="icon">
+              <i class="fa-solid fa-envelope-open"></i>
+            </div>
+            <p>info@example.com</p>
+          </div>
+        </div>
+        <map>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.32566430491!2d30.953035885059034!3d31.1006793815104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7ac79a47a32fb%3A0xfdad48b4f475424a!2z2YXYs9iq2LTZgdmJINmD2YHYsdin2YTYtNmK2K4g2KfZhNis2KfZhdi52Yo!5e0!3m2!1sar!2seg!4v1663527244157!5m2!1sar!2seg"
+            width="890"
+            height="400"
+            style="border: 0; border-radius: 7px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </map>
+        <form class="contact__form">
+          <input type="text" class="name" name="name" placeholder="Your Name" required />
+          <input
+            type="email"
+            class="email"
+            name="email"
+            placeholder="Your email" required
+          />
+          <input
+            type="text"
+            class="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            maxlength="200"
+            required
+          ></textarea>
+          <div id="show_number"></div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <div class="foot_touch">
+            <h3 class="foot_title">GET IN TOUCH</h3>
+            <p>
+              No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et
+              et dolor sed dolor
+            </p>
+            <div class="address">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>123 Street, New York, USA</span>
+            </div>
+            <div class="email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@example.com</span>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>+012 345 67890</span>
+            </div>
+          </div>
+          <div class="foot_links">
+            <h3 class="foot_title">QUICK LINKS</h3>
+            <ul class="foot-link">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Meet The Team
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Latest Blog
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_links popular">
+            <h3 class="foot_title">POPULAR LINKS</h3>
+            <ul class="foot-link">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Meet The Team
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Latest Blog
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="news_letter">
+            <h3 class="foot_title">NEWSLETTER</h3>
+            <div>
+              <input type="email" placeholder="Your Email Address" />
+              <input type="button" value="Sing Up" />
+            </div>
+            <h4>FOLLOW US</h4>
+            <ul class="news_letter_links">
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__end">
+          <div class="copy">
+            &copy;
+            <span><a href="#">Your Site Name.</a> All Right Reserved.</span>
+          </div>
+          <div class="designer">
+            Designed by <span><a href="https://www.facebook.com/Abdelhameed.Marei" target="_blank">AM</a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Top Button Start -->
+    <div class="top_btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- Top Button End -->
+
+    <!-- jQuery Plugin -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

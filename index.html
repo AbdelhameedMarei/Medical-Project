@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hospital website for Help all" />
+    <meta name="keywords" content="hospital, doctor, patient, nurse" />
+    <meta name="author" content="Abdelhameed Marei" />
+    <!-- Main File CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts Library -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Brand Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/medical-icon.png" />
+    <title>MEDINOVA</title>
+  </head>
+  <body>
+
+    <!-- Network Status Start -->
+    <!-- <div class="network__status">
+      <i class="fa-solid fa-wifi"></i>
+      <h3 id="msg__status"></h3>
+    </div> -->
+    <!-- Network Status End -->
+
+    <!-- Loading Page Start -->
+    <div class="loader">
+      <div class="lds-heart"><div></div></div>
+    </div>
+    <!-- Loading Page End -->
+
+    <!-- Topbar Start -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar__content">
+          <div class="topbar__info">
+            <span>
+              <a href="tel:+01062588401">
+                <i class="fa-solid fa-phone"></i>
+                +0123456789
+              </a>
+              <span class="space">|</span>
+            </span>
+            <span>
+              <a href="mailto:info@example.com">
+                <i class="fa-regular fa-envelope"></i>
+                info@example.com
+              </a>
+            </span>
+          </div>
+          <ul class="topbar__social-media">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__content">
+          <div class="navbar__brand">
+            <a href="index.html">
+              <i class="fa-solid fa-house-chimney-medical fa-2x"></i>
+              <h1 title="Hospital">medinova</h1>
+            </a>
+          </div>
+          <input type="checkbox" id="menu-icon" />
+          <label for="menu-icon"><i class="fa-solid fa-bars"></i></label>
+          <ul class="navbar__link">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="main_pages_link">
+              <a href="#">Pages <i class="fa-solid fa-sort-down"></i></a>
+              <ul class="sub_pages_link">
+                <li><a href="#">project 1</a></li>
+                <li><a href="#">project 2</a></li>
+                <li><a href="#">project 3</a></li>
+                <li><a href="#">project 4</a></li>
+                <li><a href="#">project 5</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="hero">
+      <div class="hero__content">
+        <div class="container">
+          <h3>WELCOME TO MEDINOVA</h3>
+          <h2>
+            Best Healthcare <br />
+            Solution In Your City
+          </h2>
+          <button type="button">Find Doctor</button>
+          <button type="button">Appointment</button>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- About Us Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__img">
+            <img src="img/about.jpg" alt="about img" draggable="false" />
+          </div>
+          <div class="about__info">
+            <div class="main__title">
+              <h3 class="title">ABOUT US</h3>
+              <h2 class="des">
+                Best Medical Care For <br />
+                Yourself and Your Family
+              </h2>
+            </div>
+            <p>
+              Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam
+              dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam
+              diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem
+              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+              tempor consetetur takimata eirmod, dolores takimata consetetur
+              invidunt magna dolores aliquyam dolores dolore. Amet erat amet et
+              magna
+            </p>
+            <div class="about__label">
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-user-doctor"></i>
+                  <h5>Qualified</h5>
+                  <h6>Doctors</h6>
+                </div>
+              </div>
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-bed"></i>
+                  <h5>Emergency</h5>
+                  <h6>Services</h6>
+                </div>
+              </div>
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-microscope"></i>
+                  <h5>Accurate</h5>
+                  <h6>Testing</h6>
+                </div>
+              </div>
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-truck-medical"></i>
+                  <h5>Free</h5>
+                  <h6>Ambulance</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Services Start -->
+    <div class="services" id="service">
+      <div class="container">
+        <div class="main__title">
+          <h3 class="title">SERVICES</h3>
+          <h2 class="des">
+            Excellent Medical <br />
+            Services
+          </h2>
+        </div>
+        <div class="services__card">
+          <div class="card">
+            <div class="card_info">
+              <div class="card_icon">
+                <i class="fa-solid fa-user-doctor fa-2x"></i>
+              </div>
+              <h3>Emergency Care</h3>
+              <p>
+                Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                rebum stet, justo elitr dolor amet sit
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_info">
+              <div class="card_icon">
+                <i class="fa-solid fa-bed fa-2x"></i>
+              </div>
+              <h3>Operation & Surgery</h3>
+              <p>
+                Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                rebum stet, justo elitr dolor amet sit
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_info">
+              <div class="card_icon">
+                <i class="fa-solid fa-stethoscope fa-2x"></i>
+              </div>
+              <h3>Outdoor Checkup</h3>
+              <p>
+                Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                rebum stet, justo elitr dolor amet sit
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_info">
+              <div class="card_icon">
+                <i class="fa-solid fa-truck-medical fa-2x"></i>
+              </div>
+              <h3>Ambulance Service</h3>
+              <p>
+                Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                rebum stet, justo elitr dolor amet sit
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_info">
+              <div class="card_icon">
+                <i class="fa-solid fa-pills fa-2x"></i>
+              </div>
+              <h3>Medicine & Pharmacy</h3>
+              <p>
+                Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                rebum stet, justo elitr dolor amet sit
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_info">
+              <div class="card_icon">
+                <i class="fa-solid fa-microscope fa-2x"></i>
+              </div>
+              <h3>Blood Testing</h3>
+              <p>
+                Kasd dolor no lorem nonumy sit labore tempor at justo rebum
+                rebum stet, justo elitr dolor amet sit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Appointment Start -->
+    <section class="appointment">
+      <div class="appointment__content">
+        <div class="appoint__info">
+          <div class="main__title">
+            <h3 class="title">APPOINTMENT</h3>
+            <h2 class="des">
+              Make An <br />
+              Appointment For <br />
+              Your Family
+            </h2>
+          </div>
+          <p>
+            Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
+            ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo
+            rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod
+            et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea
+            dolore sanctus sed et. Takimata takimata sanctus sed.
+          </p>
+          <button type="button">Find Doctor</button>
+          <button type="button">Read More</button>
+        </div>
+        <div class="appoint__form">
+          <h2>Book An Appointment</h2>
+          <form action="" method="post">
+            <select>
+              <option value="" selected>Choose Department</option>
+              <option value="">Department 1</option>
+              <option value="">Department 2</option>
+              <option value="">Department 3</option>
+            </select>
+            <select>
+              <option value="" selected>Select Doctor</option>
+              <option value="">Doctor 1</option>
+              <option value="">Doctor 2</option>
+              <option value="">Doctor 3</option>
+            </select>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <input type="datetime" placeholder="Date" />
+            <input type="datetime" placeholder="Time" />
+          </form>
+          <button type="submit">Make An Appointment</button>
+        </div>
+      </div>
+    </section>
+    <!-- Appointment End -->
+
+    <!-- Pricing Start -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="main__title">
+          <h3 class="title">MEDICAL PACKAGES</h3>
+          <h2 class="des">
+            Awesome Medical <br />
+            Programs
+          </h2>
+        </div>
+        <div class="packages__content">
+          <div class="package">
+            <div class="main__img">
+              <img src="img/price-1.jpg" alt="price1" />
+              <div class="img__overlay">
+                <div class="img__overlay__info">
+                  <h3>Pregnancy care</h3>
+                  <h4><sup>$</sup>49<small>/ Year</small></h4>
+                </div>
+              </div>
+            </div>
+            <div class="package__info">
+              <p>Emergency Medical Treatment</p>
+              <p>Highly Experienced Doctors</p>
+              <p>Highest Success Rate</p>
+              <p>Telephone Service</p>
+              <button type="button">Apply Now</button>
+            </div>
+          </div>
+          <div class="package">
+            <div class="main__img">
+              <img src="img/price-2.jpg" alt="price1" />
+              <div class="img__overlay">
+                <div class="img__overlay__info">
+                  <h3>Health Checkup</h3>
+                  <h4><sup>$</sup>99<small>/ Year</small></h4>
+                </div>
+              </div>
+            </div>
+            <div class="package__info">
+              <p>Emergency Medical Treatment</p>
+              <p>Highly Experienced Doctors</p>
+              <p>Highest Success Rate</p>
+              <p>Telephone Service</p>
+              <button type="button">Apply Now</button>
+            </div>
+          </div>
+          <div class="package__back">
+            <div class="arrow_icon">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing end -->
+
+    <!-- Find Doctor Start -->
+    <section class="find">
+      <div class="find__content">
+        <div class="main__title">
+          <h3 class="title">FIND A DOCTOR</h3>
+          <h2 class="des">
+            Find A Healthcare <br />
+            Professionals
+          </h2>
+        </div>
+        <p>
+          Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos
+          sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit
+          justo
+        </p>
+        <form>
+          <select>
+            <option>Department</option>
+            <option>Department 1</option>
+            <option>Department 2</option>
+            <option>Department 3</option>
+          </select>
+          <input type="text" placeholder="Keyword" />
+          <input type="button" value="Search" />
+        </form>
+      </div>
+    </section>
+    <!-- Find Doctor End -->
+
+    <!-- TESTIMONIAL Start -->
+    <section class="testimonial">
+      <div class="main__title">
+        <h3 class="title">TESTIMONIAL</h3>
+        <h2 class="des">
+          Patients Say About Our <br/> Services
+        </h2>
+      </div>
+      <div class="testimonial__content">
+        <div class="testimonial__slide">
+          <div class="test_img">
+            <img src="img/testimonial-1.jpg" alt="testimonial 1" />
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p>
+            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+            dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
+            tempor diam tempor erat. Erat dolor rebum sit ipsum.
+          </p>
+          <hr />
+          <h3>Patient Name</h3>
+          <h4>Profession</h4>
+        </div>
+        <div class="testimonial__slide">
+          <div class="test_img">
+            <img src="img/testimonial-2.jpg" alt="testimonial 1" />
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p>
+            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+            dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
+            tempor diam tempor erat. Erat dolor rebum sit ipsum.
+          </p>
+          <hr />
+          <h3>Patient Name</h3>
+          <h4>Profession</h4>
+        </div>
+        <div class="testimonial__slide">
+          <div class="test_img">
+            <img src="img/testimonial-3.jpg" alt="testimonial 1" />
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p>
+            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+            dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
+            tempor diam tempor erat. Erat dolor rebum sit ipsum.
+          </p>
+          <hr />
+          <h3>Patient Name</h3>
+          <h4>Profession</h4>
+        </div>
+      </div>
+      <ul class="test__circle">
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+      </ul>
+    </section>
+    <!-- TESTIMONIAL End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <div class="foot_touch">
+            <h3 class="foot_title">GET IN TOUCH</h3>
+            <p>
+              No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et
+              et dolor sed dolor
+            </p>
+            <div class="address">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>123 Street, New York, USA</span>
+            </div>
+            <div class="email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@example.com</span>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>+012 345 67890</span>
+            </div>
+          </div>
+          <div class="foot_links">
+            <h3 class="foot_title">QUICK LINKS</h3>
+            <ul class="foot-link">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Meet The Team
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Latest Blog
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="foot_links popular">
+            <h3 class="foot_title">POPULAR LINKS</h3>
+            <ul class="foot-link">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Meet The Team
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Latest Blog
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angle-right"></i>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="news_letter">
+            <h3 class="foot_title">NEWSLETTER</h3>
+            <div>
+              <input type="email" placeholder="Your Email Address" />
+              <input type="button" value="Sing Up" />
+            </div>
+            <h4>FOLLOW US</h4>
+            <ul class="news_letter_links">
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__end">
+          <div class="copy">
+            &copy;
+            <span><a href="#">Your Site Name.</a> All Right Reserved.</span>
+          </div>
+          <div class="designer">
+            Designed by <span><a href="https://www.facebook.com/Abdelhameed.Marei" target="_blank">AM</a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Top Button Start -->
+    <div class="top_btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- Top Button End -->
+
+    <!-- jQuery Plugin -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
