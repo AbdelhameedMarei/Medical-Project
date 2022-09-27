@@ -7,10 +7,8 @@
     <meta name="description" content="Hospital website for Help all" />
     <meta name="keywords" content="hospital, doctor, patient, nurse" />
     <meta name="author" content="Abdelhameed Marei" />
-    <!-- Link Index Main File CSS -->
+    <!-- Main File CSS -->
     <link rel="stylesheet" href="css/main.css" />
-    <!-- Link Contact File CSS -->
-    <link rel="stylesheet" href="css/contact.css" />
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Google Fonts Library -->
@@ -20,11 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Brand Icon Site -->
+    <!-- WOW Animation Library -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Brand Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/medical-icon.png" />
-    <title>Contact</title>
+    <title>About Us</title>
   </head>
   <body>
+
     <!-- Topbar Start -->
     <div class="topbar">
       <div class="container">
@@ -100,74 +101,65 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Contact Start -->
-    <section class="contact">
+    <!-- About Us Start -->
+    <section class="about" id="about">
       <div class="container">
-        <div class="main__title">
-          <h3 class="title">ANY QUESTIONS?</h3>
-          <h2 class="des">
-            Please Feel Free To <br />
-            Contact Us
-          </h2>
+        <div class="about__content">
+          <div class="about__img wow fadeInLeft">
+            <img src="img/about.jpg" alt="about img" draggable="false" />
+          </div>
+          <div class="about__info">
+            <div class="main__title">
+              <h3 class="title">ABOUT US</h3>
+              <h2 class="des">
+                Best Medical Care For <br />
+                Yourself and Your Family
+              </h2>
+            </div>
+            <p>
+              Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam
+              dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam
+              diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem
+              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+              tempor consetetur takimata eirmod, dolores takimata consetetur
+              invidunt magna dolores aliquyam dolores dolore. Amet erat amet et
+              magna
+            </p>
+            <div class="about__label">
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-user-doctor"></i>
+                  <h5>Qualified</h5>
+                  <h6>Doctors</h6>
+                </div>
+              </div>
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-bed"></i>
+                  <h5>Emergency</h5>
+                  <h6>Services</h6>
+                </div>
+              </div>
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-microscope"></i>
+                  <h5>Accurate</h5>
+                  <h6>Testing</h6>
+                </div>
+              </div>
+              <div class="label_content">
+                <div class="label_info">
+                  <i class="fa-solid fa-truck-medical"></i>
+                  <h5>Free</h5>
+                  <h6>Ambulance</h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact__content__info">
-          <div class="contact__info">
-            <div class="icon">
-              <i class="fa-solid fa-location-arrow"></i>
-            </div>
-            <p>123 Street, New York, USA</p>
-          </div>
-          <div class="contact__info">
-            <div class="icon">
-              <i class="fa-solid fa-phone-flip"></i>
-            </div>
-            <p>+012 345 6789</p>
-          </div>
-          <div class="contact__info">
-            <div class="icon">
-              <i class="fa-solid fa-envelope-open"></i>
-            </div>
-            <p>info@example.com</p>
-          </div>
-        </div>
-        <map>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.32566430491!2d30.953035885059034!3d31.1006793815104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7ac79a47a32fb%3A0xfdad48b4f475424a!2z2YXYs9iq2LTZgdmJINmD2YHYsdin2YTYtNmK2K4g2KfZhNis2KfZhdi52Yo!5e0!3m2!1sar!2seg!4v1663527244157!5m2!1sar!2seg"
-            width="890"
-            height="400"
-            style="border: 0; border-radius: 7px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </map>
-        <form class="contact__form">
-          <input type="text" class="name" name="name" placeholder="Your Name" required />
-          <input
-            type="email"
-            class="email"
-            name="email"
-            placeholder="Your email" required
-          />
-          <input
-            type="text"
-            class="subject"
-            name="subject"
-            placeholder="Subject"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            maxlength="200"
-            required
-          ></textarea>
-          <div id="show_number"></div>
-          <button type="submit">Send Message</button>
-        </form>
       </div>
     </section>
-    <!-- Contact End -->
+    <!-- About Us End -->
 
     <!-- Footer Start -->
     <footer>
@@ -316,6 +308,8 @@
     </div>
     <!-- Top Button End -->
 
+    <!-- WOW.js Animation Library  -->
+    <script src="js/wow.min.js"></script>
     <!-- jQuery Plugin -->
     <script src="js/jquery-3.6.1.min.js"></script>
     <!-- Main Script -->
