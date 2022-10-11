@@ -6,7 +6,7 @@
 }
 
 /**************************
-****** Global Rules ******
+****** Global Styles ******
 **************************/
 
 *{
@@ -192,7 +192,6 @@ body{ font-family: 'Roboto', sans-serif }
 
 .sub_pages_link li a:hover::after,
 .sub_pages_link li a:hover{
-    width: 0;
     color: #000;
 }
 
@@ -345,9 +344,13 @@ body{ font-family: 'Roboto', sans-serif }
 
 @media screen and (max-width: 768px) {
     .hero{
-        height: 60vh;
+        height: 45vh;
         text-align: center;
         background-position: center;
+    }
+
+    .hero__content {
+        padding-top: 50px;
     }
 
     .hero__content h2{
@@ -438,7 +441,7 @@ body{ font-family: 'Roboto', sans-serif }
 
 /* Responsive About-Us section */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .about__img{ width: 100% }
 
@@ -446,10 +449,11 @@ body{ font-family: 'Roboto', sans-serif }
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
         grid-gap: 1rem;
+        justify-content: center;
     }
 
     .label_content{
-        width: 200px;
+        width: 250px;
     }
 
     .main__title .des{
@@ -513,6 +517,16 @@ body{ font-family: 'Roboto', sans-serif }
     color: var(--info-color);
     margin-top: 15px;
     line-height: 1.6;
+}
+
+.services__card .card:hover::before{
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #13c5dd;
+    display: block;
+    margin: auto;
+    transition: all .4s ease;
 }
 
 /* Responsive Services section */
@@ -657,25 +671,35 @@ body{ font-family: 'Roboto', sans-serif }
 
 /* Responsive Appointment section */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 767px){
 
-    .main__title .des br {
-        display: none;
+    .appoint__info {
+        max-width: 80%;
+        overflow: hidden;
     }
-
-    .appoint__info p{ width: 97% }
+    .main__title .des br { display: none }
 
     .appoint__info button{ padding: 20px 35px }
+
+    .appoint__form{
+        height: auto;
+        width: 320px;
+        padding: 25px;
+    }
 
     .appoint__form form{
         grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     }
 
-    .appoint__form{
-        height: auto;
-        width: 400px;
-        margin: auto;
+    .appoint__form form select,
+    .appoint__form form input{
+        width: 90%;
     }
+
+    .appoint__info button{ padding: 16px 30px}
+
+    .appoint__info button:last-of-type { margin-left: 0; }
+
 }
 
 /***************************
@@ -898,22 +922,22 @@ body{ font-family: 'Roboto', sans-serif }
     .find{ height: 550px }
 
     .find__content p{
-        width: 420px;
+        width: 320px;
         line-height: 1.4;
     }
 
     .find__content form{
-        width: 500px;
+        width: 400px;
         margin: 50px auto;
     }
 
-    .find__content form select{ width: 100px }
+    .find__content form select{ width: 80px }
 
-    .find__content form input[type="text"]{ width: 200px }
+    .find__content form input[type="text"]{ width: 150px }
 
     .find__content form input[type="button"]{
-        padding: 21px 30px;
-        width: 100px;
+        padding: 21px 15px;
+        width: 80px;
     }
 }
 
@@ -937,7 +961,7 @@ body{ font-family: 'Roboto', sans-serif }
     animation: sliding 10s linear infinite;
 }
 
-.testimonial__slide{ float: left }
+.testimonial__slide{ float: left; width: 550px; margin: auto; }
 
 .testimonial__content:hover{
     animation-play-state: paused;
@@ -965,7 +989,7 @@ body{ font-family: 'Roboto', sans-serif }
 
 .testimonial__slide p{
     color: var(--info-color);
-    width: 550px;
+    width: 100%;
     line-height: 1.6;
     font-size: 21px;
     margin-top: 30px;
@@ -974,6 +998,10 @@ body{ font-family: 'Roboto', sans-serif }
 .testimonial__slide hr{
     width: 150px;
     margin: 20px auto;
+}
+
+.patinet-name{
+    text-align: center;
 }
 
 .testimonial__slide h3{
@@ -1014,15 +1042,29 @@ body{ font-family: 'Roboto', sans-serif }
 
 @media screen and (max-width: 991px) {
 
-    .testimonial .main__title .des{
-        width: 400px;
-        margin: auto;
-        margin-top: 15px;
+    .testimonial{
+        width: 430px;
     }
 
-    .testimonial__slide p{
-        padding-right: 70px;
+    .testimonial .main__title{
+        width: 300px;
+        margin: auto;
     }
+
+    .test_img img{ margin-left: -100px; }
+
+    .testimonial__slide p{
+        width: 76%;
+    }
+
+    .testimonial__slide hr{
+        margin-left: 130px;
+    }
+
+    .patinet-name{
+        margin-left: -130px;
+    }
+
 }
 
 /***************************

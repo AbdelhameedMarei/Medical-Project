@@ -62,6 +62,12 @@
     margin-bottom: 15px;
     color: var(--info-color);
     font-size: 15px;
+    caret-color: var(--main-color);
+}
+
+.contact__form input::placeholder,
+textarea::placeholder{
+    color: var(--secondry-color);
 }
 
 .contact__form input.name{ margin-right: 8px }

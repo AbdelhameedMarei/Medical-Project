@@ -15,13 +15,7 @@ $(function () {
   });
 
 
-  // Active Links
-  $(".navbar__link li").on("click", function () {
-    $(this).addClass('active').siblings().removeClass('active');
-  });
-
-
-
+  
   // Contact Textarea Max Value
   var max = 200;
   $(".contact__form textarea").keyup(function () {
@@ -30,11 +24,11 @@ $(function () {
 
     if (char === max) {
       $("#show_number")
-        .text("The Reminds Words Is: " + char)
+        .text("The Remaining Letters Is: " + char)
         .hide();
     } else {
       $("#show_number")
-        .text("The Reminds Words Is: " + char)
+        .text("The Remaining Letters Is: " + char)
         .show();
 
       if (char === 0) {
@@ -44,7 +38,7 @@ $(function () {
           .css("color", "red");
       } else {
         $("#show_number")
-          .text("The Reminds Words Is: " + char)
+          .text("The Remaining Letters Is: " + char)
           .show()
           .css("color", "#848e9f");
       }
@@ -77,16 +71,42 @@ $(function () {
 
 
 //Set Date And Time In Input
-const inputDate = document.getElementById('date');
-const inputTime = document.querySelector('.time');
-const d = new Date();
-const day = d.getDate();
-const month = d.getMonth();
-const year = d.getFullYear();
-const hours = d.getHours();
-const minutes = d.getMinutes();
-inputDate.value = `${day} / ${month+1} / ${year}`;
-inputTime.value = `${hours - 12} : ${minutes}`;
+function clock() {
+
+  const inputDate = document.getElementById('date');
+  const inputTime = document.querySelector('.time');
+  let d = new Date();
+  let day = d.getDate();
+  let month = d.getMonth();
+  let year = d.getFullYear();
+  let hours = d.getHours();
+  let minutes = d.getMinutes();
+  let flag = "AM";
+
+  if (hours == 0) { //Morning
+    hours = 12;
+  }
+
+  if (hours > 12) {
+    hours = hours - 12;  //Afternon
+    flag = "PM";
+  }
+
+  inputDate.addEventListener("focus", function() {
+    inputDate.value = `${day} / ${month+1} / ${year}`;
+  });
+
+  inputTime.addEventListener("focus", function() {
+    inputTime.value = `${hours} : ${minutes} ${flag}`;
+  });
+
+
+  setTimeout(function(){
+    clock();
+  }, 1000);
+
+}
+clock();
 
 
 
