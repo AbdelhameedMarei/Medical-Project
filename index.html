@@ -7,10 +7,9 @@
     <meta name="description" content="Hospital website for Help all" />
     <meta name="keywords" content="hospital, doctor, patient, nurse" />
     <meta name="author" content="Abdelhameed Marei" />
-    <!-- Main File CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <title>MEDINOVA</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/medical-icon.png" />
     <!-- Google Fonts Library -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,20 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- WOW Animation Library -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Brand Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/medical-icon.png" />
-    <title>MEDINOVA</title>
+    <!-- Link OWL-Carousel CSS Plugin -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-
-    <!-- Network Status Start -->
-    <!-- <div class="network__status">
-      <i class="fa-solid fa-wifi"></i>
-      <h3 id="msg__status"></h3>
-    </div> -->
-    <!-- Network Status End -->
 
     <!-- Loading Page Start -->
     <div class="loader">
@@ -422,60 +418,57 @@
         </h2>
       </div>
       <div class="testimonial__content">
-        <div class="testimonial__slide">
-          <div class="test_img">
-            <img src="img/testimonial-1.jpg" alt="testimonial 1" />
-            <i class="fa-solid fa-quote-left"></i>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="test_img">
+              <img src="img/testimonial-1.jpg" alt="testimonial 1" />
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>
+              Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+              dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
+              tempor diam tempor erat. Erat dolor rebum sit ipsum.
+            </p>
+            <hr />
+            <div class="patinet-name">
+              <h3>Patient Name</h3>
+              <h4>Profession</h4>
+            </div>
           </div>
-          <p>
-            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-            dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
-            tempor diam tempor erat. Erat dolor rebum sit ipsum.
-          </p>
-          <hr />
-          <div class="patinet-name">
-            <h3>Patient Name</h3>
-            <h4>Profession</h4>
+          <div class="item">
+            <div class="test_img">
+              <img src="img/testimonial-2.jpg" alt="testimonial 2" />
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>
+              Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+              dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
+              tempor diam tempor erat. Erat dolor rebum sit ipsum.
+            </p>
+            <hr />
+            <div class="patinet-name">
+              <h3>Patient Name</h3>
+              <h4>Profession</h4>
+            </div>
           </div>
-        </div>
-        <div class="testimonial__slide">
-          <div class="test_img">
-            <img src="img/testimonial-2.jpg" alt="testimonial 1" />
-            <i class="fa-solid fa-quote-left"></i>
-          </div>
-          <p>
-            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-            dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
-            tempor diam tempor erat. Erat dolor rebum sit ipsum.
-          </p>
-          <hr />
-          <div class="patinet-name">
-            <h3>Patient Name</h3>
-            <h4>Profession</h4>
-          </div>
-        </div>
-        <div class="testimonial__slide">
-          <div class="test_img">
-            <img src="img/testimonial-3.jpg" alt="testimonial 1" />
-            <i class="fa-solid fa-quote-left"></i>
-          </div>
-          <p>
-            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-            dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
-            tempor diam tempor erat. Erat dolor rebum sit ipsum.
-          </p>
-          <hr />
-          <div class="patinet-name">
-            <h3>Patient Name</h3>
-            <h4>Profession</h4>
+          <div class="item">
+            <div class="test_img">
+              <img src="img/testimonial-3.jpg" alt="testimonial 3" />
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p>
+              Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+              dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et
+              tempor diam tempor erat. Erat dolor rebum sit ipsum.
+            </p>
+            <hr />
+            <div class="patinet-name">
+              <h3>Patient Name</h3>
+              <h4>Profession</h4>
+            </div>
           </div>
         </div>
       </div>
-      <ul class="test__circle">
-        <li></li>
-        <li class="active"></li>
-        <li></li>
-      </ul>
     </section>
     <!-- TESTIMONIAL End -->
 
@@ -630,6 +623,8 @@
     <script src="js/wow.min.js"></script>
     <!-- jQuery Plugin -->
     <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- Link owl-carousel Plugin -->
+    <script src="js/owl.carousel.min.js"></script>
     <!-- Main Script -->
     <script src="js/main.js"></script>
   </body>

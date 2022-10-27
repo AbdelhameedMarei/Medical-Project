@@ -60,6 +60,30 @@ $(function () {
     });
   });
 
+
+
+  // OWL-CAROUSEL
+  $('.owl-carousel').owlCarousel({
+    rtl:false,
+    loop:true,
+    margin: 30,
+    autoplay:true,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+  });
+
+
+
   // Loader Page
   $(window).on("load", function () {
     $(".loader").fadeOut(3000);
@@ -112,44 +136,3 @@ clock();
 
 //WOW.js Animation Plugin
 new WOW().init();
-
-
-
-
-// Check Network Status
-// const network__status = document.querySelector('.network__status');
-// const wifiStatus = document.querySelector('.fa-wifi');
-// const msgStatus = document.getElementById('msg__status');
-// const body = document.querySelector('body');
-
-// window.onload = function () {
-//     if (window.navigator.onLine) {
-//         onLine();
-//     } else {
-//         offLine();
-//     }
-// }
-
-// window.addEventListener("online", function () {
-//     onLine();
-// })
-
-// window.addEventListener("offline", function () {
-//     offLine();
-// })
-
-// function onLine() {
-//     msgStatus.innerHTML = "You Are Online Now!";
-//     wifiStatus.classList.add('wifi__online');
-//     wifiStatus.classList.remove('wifi__offline');
-// }
-
-// function offLine() {
-//     msgStatus.innerHTML = "You Are Offline Now!";
-//     wifiStatus.classList.add('wifi__offline');
-//     wifiStatus.classList.remove('wifi__online');
-// }
-
-// network__status.onclick = function() {
-//     this.style.display = 'none';
-// }
