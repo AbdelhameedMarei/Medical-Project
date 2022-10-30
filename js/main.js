@@ -62,8 +62,34 @@ $(function () {
 
 
 
-  // OWL-CAROUSEL
-  $('.owl-carousel').owlCarousel({
+  // OWL-CAROUSEL PRICING
+  $('.owl-pricing').owlCarousel({
+    rtl:false,
+    loop:true,
+    nav:true,
+    mouseDrag: false,
+    margin: 50,
+    navText : [
+        '<i class="fa-solid fa-arrow-left-long"></i>',
+        '<i class="fa-solid fa-arrow-right-long"></i>'
+    ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+});
+
+
+
+  // OWL-CAROUSEL TESTIMONIAL
+  $('.owl-testimonial').owlCarousel({
     rtl:false,
     loop:true,
     margin: 30,

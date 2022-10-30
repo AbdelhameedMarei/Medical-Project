@@ -440,7 +440,6 @@ body{ font-family: 'Roboto', sans-serif }
 }
 
 /* Responsive About-Us section */
-
 @media screen and (max-width: 767px) {
 
     .about__img{ width: 100% }
@@ -530,7 +529,6 @@ body{ font-family: 'Roboto', sans-serif }
 }
 
 /* Responsive Services section */
-
 @media screen and (max-width: 991px){
 
     .services__card .card{
@@ -546,7 +544,6 @@ body{ font-family: 'Roboto', sans-serif }
 /***************************
 **** Appointment Start *****
 ***************************/
-
 .appointment{
     margin-top: var(--padd-sec);
     background-color: var(--main-color);
@@ -559,17 +556,11 @@ body{ font-family: 'Roboto', sans-serif }
     gap: 3rem;
 }
 
-.appoint__info{
-    width: 450px
-}
+.appoint__info{ width: 450px }
 
-.appoint__info .main__title{
-    text-align: left;
-}
+.appoint__info .main__title{ text-align: left }
 
-.appoint__info .main__title .title{
-    color: #ffffff;
-}
+.appoint__info .main__title .title{ color: #ffffff }
 
 .appoint__info p{
     color: #fff;
@@ -601,9 +592,7 @@ body{ font-family: 'Roboto', sans-serif }
     color: #fff;
 }
 
-.appoint__info button:hover{
-    box-shadow: 0 3px 4px #1d2a4d;
-}
+.appoint__info button:hover{ box-shadow: 0 3px 4px #1d2a4d }
 
 .appoint__form{
     width: 450px;
@@ -670,7 +659,6 @@ body{ font-family: 'Roboto', sans-serif }
 }
 
 /* Responsive Appointment section */
-
 @media screen and (max-width: 767px){
 
     .appoint__info {
@@ -679,45 +667,35 @@ body{ font-family: 'Roboto', sans-serif }
     }
     .main__title .des br { display: none }
 
-    .appoint__info button{ padding: 20px 35px }
+    .appoint__info button{ padding: 18px 32px }
 
     .appoint__form{
+        width: auto;
         height: auto;
-        width: 320px;
         padding: 25px;
     }
 
     .appoint__form form{
-        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     }
 
     .appoint__form form select,
     .appoint__form form input{
         width: 90%;
     }
-
-    .appoint__info button{ padding: 16px 30px}
-
-    .appoint__info button:last-of-type { margin-left: 0; }
-
 }
 
 /***************************
 **** Pricing Start *****
 ***************************/
-
-.pricing{
-    padding-top: var(--padd-sec);
-}
+.pricing{ padding-top: var(--padd-sec) }
 
 .packages__content{
     position: relative;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    grid-gap: 2rem;
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-top: 60px;
+    
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .package{
@@ -725,6 +703,7 @@ body{ font-family: 'Roboto', sans-serif }
     height: 580px;
     background-color: #eff5f9;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .package .main__img{
@@ -797,59 +776,62 @@ body{ font-family: 'Roboto', sans-serif }
 }
 
 .package__back{
-    width: 92vw;
+    width: 100%;
     height: 355px;
     background-color: var(--main-color);
-    margin-left: -28px;
     border-radius: 10px 10px 50% 50%;
     position: absolute;
-    bottom: -23%;
+    bottom: -50px;
+    left: 0;
     z-index: -1;
 }
 
-.package__back .arrow_icon{
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+.pricing .owl-theme .owl-dots .owl-dot span { display: none; }
+
+.pricing .owl-carousel .owl-nav{margin-top: 60px;}
+
+.pricing .owl-theme .owl-nav button{
+    width: 44px;
+    height: 44px;
+    background-color: #fff !important;
+    margin: 10px;
+    border-radius: 50% !important;
 }
 
-.package__back .arrow_icon i{
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 50%;
-    margin-right: 15px;
-    color: var(--main-color);
+.pricing .owl-theme .owl-nav .disabled {
+    opacity: 1;
     cursor: pointer;
-    transition: all .4s;
 }
 
-.package__back .arrow_icon i:hover{ color: #000 }
+.pricing .owl-theme .owl-nav button i{
+    color: var(--main-color);
+    transition: .3s;
+}
+
+.pricing .owl-theme .owl-nav button:hover i{
+    color: var(--secondry-color);
+}
 
 /* Responsive Pricing section */
-
 @media screen and (max-width: 991px) {
     
     .package{
         width: 350px;
         height: 550px;
         margin: auto;
-        float: left;
     }
-
     .package__back{
-        margin-left: 0;
-        width: 100%;
-        bottom: -130px;
+        height: 250px;
+        bottom: 0;
     }
+    .pricing .owl-carousel .owl-nav{margin-top:40px;}
 }
 
 /***************************
 **** Find Doctor Start *****
 ***************************/
-
 .find{
-    margin-top: 250px;
+    margin-top: 160px;
     width: 100%;
     height: 580px;
     background-color: var(--main-color);
@@ -900,7 +882,7 @@ body{ font-family: 'Roboto', sans-serif }
 
 .find__content form input[type="button"]{
     padding: 21px 50px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     border: 0;
     cursor: pointer;
@@ -916,25 +898,19 @@ body{ font-family: 'Roboto', sans-serif }
 }
 
 /* Responsive FIND A DOCTOR section */
-
 @media screen and (max-width: 991px) {
 
     .find{ height: 550px }
-
     .find__content p{
         width: 320px;
         line-height: 1.4;
     }
-
     .find__content form{
         width: 400px;
         margin: 50px auto;
     }
-
     .find__content form select{ width: 80px }
-
     .find__content form input[type="text"]{ width: 150px }
-
     .find__content form input[type="button"]{
         padding: 21px 15px;
         width: 80px;
@@ -944,7 +920,6 @@ body{ font-family: 'Roboto', sans-serif }
 /***************************
 **** TESTIMONIAL Start *****
 ***************************/
-
 .testimonial{ padding-top: var(--padd-sec) }
 
 .testimonial__content{
@@ -1011,16 +986,24 @@ body{ font-family: 'Roboto', sans-serif }
     transition: .2s;
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span{
+.testimonial .owl-theme .owl-dots .owl-dot.active span,
+.testimonial .owl-theme .owl-dots .owl-dot:hover span{
     transform: scale(1.3);
     background-color: var(--main-color);
+}
+
+/* Responsive Testimonial section */
+@media screen and (max-width: 767px){
+    .testimonial__content{ width: 300px }
+}
+
+@media screen and (max-width: 991px){
+    .testimonial__content{ width: 400px }
 }
 
 /***************************
 ****** Footer Start *******
 ***************************/
-
 footer{
     width: 100%;
     background-color: var(--secondry-color);
@@ -1204,6 +1187,7 @@ footer{
     width: 100%;
     min-width: 100%;
     height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
