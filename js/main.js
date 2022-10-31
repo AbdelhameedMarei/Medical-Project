@@ -1,6 +1,20 @@
 $(function () {
   "use strict";
 
+  // Loading Page
+  $(window).on("load", function () {
+    $(".loader").fadeOut(3000);
+  });
+
+
+
+  //SlideDown Nav-bar
+  $(".navbar__content label").on("click", function(){
+    $('.navbar__link').slideToggle();
+  });
+
+
+
   // Drop Down Menu
   $(".main_pages_link").on("click", function () {
     $(".sub_pages_link").slideToggle("fast");
@@ -61,7 +75,6 @@ $(function () {
   });
 
 
-
   // OWL-CAROUSEL PRICING
   $('.owl-pricing').owlCarousel({
     rtl:false,
@@ -87,7 +100,6 @@ $(function () {
 });
 
 
-
   // OWL-CAROUSEL TESTIMONIAL
   $('.owl-testimonial').owlCarousel({
     rtl:false,
@@ -107,14 +119,6 @@ $(function () {
         }
     }
   });
-
-
-
-  // Loader Page
-  $(window).on("load", function () {
-    $(".loader").fadeOut(3000);
-  });
-
 
 });//End jQuery..
 

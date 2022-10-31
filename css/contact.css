@@ -84,6 +84,8 @@ textarea::placeholder{
     box-shadow: 1px 1px 6px 1px #bbeaf1;
 }
 
+.contact__form input:invalid{ color: rgb(239, 46, 46) }
+
 #show_number{
     color: var(--info-color);
     font-size: 13px;
