@@ -67,26 +67,15 @@ body{ font-family: 'Roboto', sans-serif; }
     align-items: center;
 }
 
-.topbar__info span a{
-    color: var(--info-color);
-}
+.topbar__info span a{ color: var(--info-color); }
 
-.topbar__info span i{
-    padding-right: 5px;
-}
+.topbar__info span i{ padding-right: 5px; }
 
-.topbar__info span .space{
-    margin: 0 5px;
-}
+.topbar__info span .space{ margin: 0 5px; }
 
-.topbar__social-media li{
-    display: inline-block;
-    margin-right: 10px;
-}
+.topbar__social-media li{ display: inline-block; margin-right: 10px; }
 
-.topbar__social-media li a{
-    color: var(--info-color);
-}
+.topbar__social-media li a{ color: var(--info-color); }
 
 /**************************
 ****** Navbar Start ******
@@ -132,9 +121,7 @@ body{ font-family: 'Roboto', sans-serif; }
 }
 
 .navbar__link li a:hover,
-.navbar__link li.active a{
-    color: var(--main-color);
-}
+.navbar__link li.active a{ color: var(--main-color); }  
 
 .navbar__link li a:hover::after,
 .navbar__link li.active a::after{
@@ -157,30 +144,32 @@ body{ font-family: 'Roboto', sans-serif; }
     position: absolute;
     top: 52px;
     left: -20px;
-    background-color: #eff5f9;
+    background-color: #f2f2f2;
     width: 155px;
     border-radius: 8px;
-    display: none;
     text-align: center;
-    padding: 4px 0;
+    display: none;
+    padding: 5px 0;
 }
 
 .sub_pages_link li { padding: 10px 0px;}
 
 .sub_pages_link li a{
     width: 100%;
-    padding: 10px 40px;
-    color: #000;
+    padding: 10px 45px;
+    color: var(--secondry-color);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.sub_pages_link li:hover{ background-color: #a3cef3 }
+.sub_pages_link li:hover{
+    background-color: var(--secondry-color);
+}
 
-.sub_pages_link li a:hover::after,
-.sub_pages_link li a:hover{ color: #000;}
+.sub_pages_link li:hover a{ color: #fff;}
 
-/* Responsive Navbar Links */
+.sub_pages_link li a:hover::after{ width: 0; }
+
 .navbar__content input[type="checkbox"] { display: none;}
 
 .navbar__content label{
@@ -196,10 +185,9 @@ body{ font-family: 'Roboto', sans-serif; }
     font-size: 22px;
 }
 
-.navbar__content label:hover{
-    color: var(--main-color);
-}
+.navbar__content label:hover{ color: var(--main-color); }
 
+/* Responsive Navbar Links */
 @media screen and (max-width: 991px) {
 
     .topbar{ display: none }
@@ -211,7 +199,9 @@ body{ font-family: 'Roboto', sans-serif; }
         width: 100%;
         position: absolute;
         top: 70px;
-        background-color: #fff;
+        left: 0;
+        background-color: #f9f9f9;
+        padding: 15px 0;
     }
 
     .navbar__content input[type="checkbox"]:checked ~ .navbar__link{
@@ -225,45 +215,25 @@ body{ font-family: 'Roboto', sans-serif; }
 
     .navbar__link li{
         display: block;
-        padding: 10px;
-        padding-bottom: 20px;
-        margin-left: 20px;
+        padding: 14px;
+        margin-left: 60px;
     }
-
+    
+    .navbar__link li a:hover::after,
+    .navbar__link li.active a::after{ width: 0;}
+    
     .navbar .container{ margin: 0 }
 
-    .navbar__link li a:hover::after,
-    .navbar__link li.active a::after{
-        width: 0;
-    }
+    .sub_pages_link{ left: 120px; top: -120px;}
 
-    .sub_pages_link{
-        left: 100px;
-        top: -120px;
-        padding: 0;
-        background-color: #eff5f9;
-    }
+    .sub_pages_link li{ padding: 10px 0; margin: 8px 0;}
 
-    .sub_pages_link li{
-        margin-left: 0;
-        padding: 10px 0;
-    }
+    .sub_pages_link li a:hover{ color: #fff}
 
-    .sub_pages_link li a{
-        padding: 10px 40px;
-    }
+    .navbar__brand{  padding-left: 20px;  }
 
-    .navbar__brand{
-        padding-left: 20px;
-    }
-
-    .navbar__brand a h1{
-        font-size: 26px;
-    }
-
-    .navbar__brand a i{
-        font-size: 25px;
-    }
+    .navbar__brand a h1,
+    .navbar__brand a i{ font-size: 26px; }
 }
 
 /**************************
@@ -500,14 +470,10 @@ body{ font-family: 'Roboto', sans-serif; }
 /* Responsive Services section */
 @media screen and (max-width: 991px){
 
-    .services__card .card{
-        width: 100%;
-    }
+    .services__card .card{ width: 100%; }
 
     .services__card .card{
-        display: grid;
-        align-items: center;
-    }
+        display: grid; align-items: center; }
 }
 
 /***************************
@@ -597,10 +563,7 @@ body{ font-family: 'Roboto', sans-serif; }
     border: 0;
 }
 
-.appoint__form form select option{
-    font-size: 16px;
-    outline: 0;
-}
+.appoint__form form select option{ font-size: 16px; outline: 0; }
 
 .appoint__form form select:focus,
 .appoint__form form input:focus{
@@ -637,7 +600,7 @@ body{ font-family: 'Roboto', sans-serif; }
     .main__title .des br { display: none }
     .appoint__info button{ padding: 18px 28px }
     .appoint__form{
-        width: 300px;
+        width: 320px;
         height: auto;
         padding: 25px;
     }
@@ -668,10 +631,7 @@ body{ font-family: 'Roboto', sans-serif; }
 
 .package .main__img{ position: relative }
 
-.package .main__img img{
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-}
+.package .main__img img{ border-radius: 10px 10px 0 0; width: 100%; }
 
 .img__overlay{
     width: 100%;
@@ -704,10 +664,7 @@ body{ font-family: 'Roboto', sans-serif; }
 
 .img__overlay__info h4 small{ font-size: 15px }
 
-.package__info{
-    margin-top: 40px;
-    text-align: center;
-}
+.package__info{ margin-top: 40px; text-align: center; }
 
 .package__info p{
     line-height: 2.4;
@@ -756,15 +713,10 @@ body{ font-family: 'Roboto', sans-serif; }
     border-radius: 50% !important;
 }
 
-.pricing .owl-theme .owl-nav .disabled {
-    opacity: 1;
-    cursor: pointer;
-}
+.pricing .owl-theme .owl-nav .disabled { opacity: 1; cursor: pointer; }
 
 .pricing .owl-theme .owl-nav button i{
-    color: var(--main-color);
-    transition: .3s;
-}
+    color: var(--main-color); transition: .3s; }
 
 .pricing .owl-theme .owl-nav button:hover i{
     color: var(--secondry-color);
@@ -795,10 +747,7 @@ body{ font-family: 'Roboto', sans-serif; }
     background-color: var(--main-color);
 }
 
-.find__content{
-    padding: 100px 0;
-    text-align: center;
-}
+.find__content{ padding: 100px 0; text-align: center; }
 
 .find__content .main__title .title{ color: #fff }
 
@@ -810,10 +759,7 @@ body{ font-family: 'Roboto', sans-serif; }
     font-size: 18px;
 }
 
-.find__content form{
-    width: 600px;
-    margin: 50px auto;
-}
+.find__content form{ width: 600px; margin: 50px auto; }
 
 .find__content form select{
     padding: 20px 13px;

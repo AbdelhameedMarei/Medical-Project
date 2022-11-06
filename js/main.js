@@ -164,5 +164,15 @@ clock();
 
 
 
+
+//Toggle Menu Icon
+const btnIcon = document.querySelector('.bar-icon');
+const menuIcon = document.querySelector('.fa-bars');
+
+btnIcon.onclick = () => menuIcon.classList.toggle("fa-times");
+
+
+
+
 //WOW.js Animation Plugin
 new WOW().init();
