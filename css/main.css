@@ -116,7 +116,6 @@ body{ font-family: 'Roboto', sans-serif; }
     color: var(--secondry-color);
     font-weight: bold;
     font-size: 18px;
-    transition: all .3s;
     position: relative;
 }
 
